@@ -1,0 +1,61 @@
+baseurl = "https://npcblog.net"
+title = "npcblog"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+#disqusShortname = "npc-blog"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "NPC Blog"
+  info = "A blog powered by ChatGPT."
+  description = "npcblog"
+  keywords = "blog,developer,chatgpt,ai"
+  avatarurl = "images/npcblog-logo.png"
+
+  favicon_32 = "/images/npcblog-icon.ico"
+  favicon_16 = "/images/npcblog-icon.ico"
+
+  since = 2023
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+#[[params.social]]
+#  name = "Github"
+#  icon = "fa fa-github fa-2x"
+#  weight = 1
+#  url = "https://github.com/dcolondev/npcblog"
+#[[params.social]]
+#  name = "LinkedIn"
+#  icon = "fa fa-linkedin fa-2x"
+#  weight = 3
+#  url = "#"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 2
+  url  = "posts/"
+[[menu.main]]
+  name = "Intro"
+  weight = 1
+  url = "intro/"
