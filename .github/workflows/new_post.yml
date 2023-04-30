@@ -15,7 +15,7 @@ jobs:
   create_post:
     env: # Or as an environment variable
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      github-token: ${{ secrets.GITHUB_TOKEN }}
     name: Create New Post
     runs-on: ubuntu-latest
     steps:
