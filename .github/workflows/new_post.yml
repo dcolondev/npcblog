@@ -18,4 +18,5 @@ jobs:
       - name: Commit any chages
         run: |
           git config --global user.name "GitHub Actions"
+          git add content/posts/*
           git diff-index --quiet HEAD || (git commit -a -m'[CI] add new post' --allow-empty && git push -f)
