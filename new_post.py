@@ -34,7 +34,7 @@ def main():
     ])
     message = response.choices[0]['message']
     print("{}".format(message['content']))
-    title = message['content'].partition('\n')[0].replace("#","").strip()
+    title = message['content'].partition('\n')[0].replace("#","").replace(":","").strip()
     write_article(title,message)
 
 if __name__ == "__main__":
