@@ -35,7 +35,7 @@ def main():
     ])
     message = response.choices[0]['message']
     print("{}".format(message['content']))
-    title = sanitize_filename(message['content'].partition('\n')[0])
+    title = sanitize_filename(message['content'].partition('\n')[0]).replace("#","").strip()
     write_article(title,message)
 
 if __name__ == "__main__":
